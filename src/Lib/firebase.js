@@ -3,7 +3,7 @@ import "firebase/compat/firestore";
 import "firebase/compat/auth";
 
 //here is where seed file will be imported
-import { seedDatabase } from '../seed';
+//import { seedDatabase } from '../seed';
 
 const config = {
     
@@ -20,7 +20,7 @@ const firebase = Firebase.initializeApp(config);
 const { FieldValue } = Firebase.firestore;
 
 //here is where seed file will be called (ONCE!)
-seedDatabase(firebase);
+//seedDatabase(firebase);
 
 
 export  { firebase, FieldValue };
