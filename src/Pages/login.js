@@ -1,4 +1,11 @@
+import { useContext } from "react";
+import { useNavigate } from "react-router";
+import FirebaseContext from "../Context/firebase";
+
 export default function Login() {
-return(<p> I am the Login Page</p>)
+    const history = useNavigate();
+    const { firebase } = useContext(FirebaseContext);
+
+    return(<p> I am the Login Page</p>)
 
 };
